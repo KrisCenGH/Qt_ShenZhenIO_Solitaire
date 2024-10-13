@@ -1,4 +1,7 @@
 # Qt_ShenZhenIO_Solitaire
+
+[**English**](https://github.com/KrisCenGH/Qt_ShenZhenIO_Solitaire/blob/main/README.md)&nbsp;&nbsp;&nbsp;[**简体中文**](https://github.com/KrisCenGH/Qt_ShenZhenIO_Solitaire/blob/main/README_zh.md)
+
 ShenZhenIO Solitaire game replicated using Qt
 
 ![Game Display](https://raw.githubusercontent.com/KrisCenGH/Qt_ShenZhenIO_Solitaire/refs/heads/main/README_images/Game%20Display1.jpg)
