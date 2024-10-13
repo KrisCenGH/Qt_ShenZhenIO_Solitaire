@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Poke</class>
+ <widget class="QMainWindow" name="Poke">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1279</width>
+    <height>827</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1279</width>
+    <height>827</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1279</width>
+    <height>827</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Poke</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/images/favicon.ico</normaloff>:/images/favicon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/images/table_large.png); background-repeat: no-repeat; background-position: center;</string>
+   </property>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1279</width>
+      <height>804</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1279</width>
+      <height>804</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1279</width>
+      <height>804</height>
+     </size>
+    </property>
+    <property name="dragMode">
+     <enum>QGraphicsView::NoDrag</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="kuang">
+    <property name="geometry">
+     <rect>
+      <x>497</x>
+      <y>17</y>
+      <width>72</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        border-radius: 36px;
+        color: transparent;
+        background-image: url(:/images/button_white_up.png);</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fa">
+    <property name="geometry">
+     <rect>
+      <x>497</x>
+      <y>101</y>
+      <width>72</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        border-radius: 36px;
+        color: transparent;
+        background-image: url(:/images/button_green_up.png);</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zhong">
+    <property name="geometry">
+     <rect>
+      <x>497</x>
+      <y>183</y>
+      <width>72</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+        border-radius: 36px;
+        color: transparent;
+        background-image: url(:/images/button_red_up.png);</string>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1279</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <addaction name="action_xinyouxi"/>
+   <addaction name="action_help"/>
+   <addaction name="action_guanyu"/>
+  </widget>
+  <action name="action_xinyouxi">
+   <property name="text">
+    <string>新游戏(New game)</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="text">
+    <string>帮助(Help)</string>
+   </property>
+  </action>
+  <action name="action_guanyu">
+   <property name="text">
+    <string>关于(About)</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
