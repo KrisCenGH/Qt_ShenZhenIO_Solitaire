@@ -15,6 +15,7 @@ Qt 5.14.2 Compiler: MinGW 7.3.0 64-bit.
 
 ___
 
+## Other
 The total number of lines of code in the header and source files is approximately 1200 lines.
 
 Known issues:<br/>
