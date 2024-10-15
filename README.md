@@ -11,7 +11,8 @@ ShenZhenIO Solitaire game replicated using Qt
 ___
 
 ## Development environment
-Qt 5.14.2 Compiler: MinGW 7.3.0 64-bit.
+* IDE: Qt 5.14.2
+* Compiler: MinGW 7.3.0 64-bit.
 
 ___
 
