@@ -427,7 +427,9 @@ void Card::mouseReleaseEvent(QGraphicsSceneMouseEvent *event) // 此函数亦包
     } else { // 非6个特殊区域(“FLOWER”会自动放置)
         QVector<QGraphicsItem*> items = QVector<QGraphicsItem*>::fromList(this->scene()->items(this->pos()));
 
-        if (items.size() >= 2 && ((this->rank + 1 == dynamic_cast<Card*>(items[1])->rank && this->suit != dynamic_cast<Card*>(items[1])->suit) ||
+        if (items.size() >= 2 && dynamic_cast<Card*>(items[1])->next == nullptr &&
+           ((this->rank + 1 == dynamic_cast<Card*>(items[1])->rank && this->suit != dynamic_cast<Card*>(items[1])->suit &&
+             dynamic_cast<Card*>(items[1]) != cells[0] && dynamic_cast<Card*>(items[1]) != cells[1] && dynamic_cast<Card*>(items[1]) != cells[2]) || // 避免cells区出现卡牌堆叠情况
                                  (dynamic_cast<Card*>(items[1])->rank == -10 && !dynamic_cast<Card*>(items[1])->get_next()))) { // 合法放置
             Card *top_card = dynamic_cast<Card*>(items[1]);
             if (this->get_pre())
